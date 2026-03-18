@@ -1,0 +1,28 @@
+# Ask the user for amount and currency
+amount = float(input("Enter the amount: "))
+currency = input("Enter the currency (USD, EUR, GBP): ")
+
+# Convert currency to uppercase for case-insensitive comparison
+currency = currency.upper()
+
+# Perform conversions
+if currency == "USD": 
+    eur = amount * 0.92
+    gbp = amount * 0.79
+    print("EUR:", format(eur, ".2f"))
+    print("GBP:", format(gbp, ".2f"))
+
+elif currency == "EUR":
+    usd = amount * 1.09
+    gbp = amount * 0.86
+    print("USD:", format(usd, ".2f"))
+    print("GBP:", format(gbp, ".2f"))
+
+elif currency == "GBP":
+    usd = amount * 1.27
+    eur = amount * 1.16
+    print("USD:", format(usd, ".2f"))
+    print("EUR:", format(eur, ".2f"))
+
+else:
+    print("Invalid Currency.")
