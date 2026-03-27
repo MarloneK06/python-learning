@@ -1,8 +1,8 @@
-# Ask the user for amount and currency
+# Ask for amount and currency
 amount = float(input("Enter the amount: "))
 currency = input("Enter the currency (USD, EUR, GBP): ")
 
-# Convert currency to uppercase for case-insensitive comparison
+# Convert currency to uppercase for case-insensitive
 currency = currency.upper()
 
 # Perform conversions
