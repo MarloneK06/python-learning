@@ -1,0 +1,16 @@
+first = input("Enter first name: ").title()
+last = input("Enter last name: ").title()
+birth_year = int(input("Enter birth year: "))
+hobby = input("Enter favorite hobby: ").title()
+
+age = 2026 - birth_year
+
+print("=" * 36)
+print(" USER PROFILE CARD ")
+print("=" * 36)
+print(f"Name: {first} {last}")
+print(f"Age: {age}")
+print(f"Hobby: {hobby}")
+print("-" * 36)
+print("Thank you for creating your profile!")
+print("=" * 36)
