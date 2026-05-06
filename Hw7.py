@@ -32,13 +32,13 @@ print("First student:", name, grade, age)
 # Advanced Exercise
 student = ("Alice", [80, 85, 90], 0)
 
-# add fourth exam
+
 student[1].append(95)
 
 # calculate average
 avg = sum(student[1]) / len(student[1])
 
-# create new tuple (since tuples can't change)
+
 updated_student = (student[0], student[1], avg)
 
 print("Original:", student)
@@ -59,10 +59,6 @@ def boost_grades(grades):
 
 boost_grades(grades)
 print("Boosted grades:", grades)
-
-# comment:
-# we use list for grades because it changes
-# we use tuple for date because it should not change
 
 
 # Intermediate Exercise
